@@ -1,0 +1,38 @@
+.main {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#ff69b4c5!important;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .letter-container {
+    background-color: #ffffff;
+    padding: 50px;
+    width: 100%;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-image: url('data:image/jpeg;base64,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');
+    background-size: cover;
+  }
+  
+  .letter-content {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Indie Flower', cursive; /* Google Font for handwritten style */
+  }
+  
+  .letter-content h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .letter-content p {
+    margin: 0;
+  }
+  
