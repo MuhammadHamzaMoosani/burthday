@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "birthday-app": {
+    "testing": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/birthday-app",
+            "outputPath": "dist/testing",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -40,12 +40,7 @@
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -75,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "birthday-app:build:production"
+              "buildTarget": "testing:build:production"
             },
             "development": {
-              "buildTarget": "birthday-app:build:development"
+              "buildTarget": "testing:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -106,9 +101,6 @@
             ],
             "scripts": []
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
